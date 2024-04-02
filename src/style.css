@@ -1,3 +1,7 @@
+:root {
+  --highlight-color: #17a2b8; /* Define a CSS variable for the highlight color */
+}
+
 body {
   background-color: #121212; /* Dark background color */
   color: #fff;
@@ -8,15 +12,22 @@ h1 {
   color: whitesmoke;
 }
 
+.btn-primary {
+  background-color: var(--highlight-color);
+  border-color: var(--highlight-color);
+}
 .container {
   max-width: 800px;
   margin: 0 auto;
   margin-top: 50px;
 }
 
+.hidden {
+  display: none;
+}
 .highlight {
   display: inline-block;
-  background-color: rgba(64, 224, 208, 0.315);
+  background-color: var(--highlight-color);
 }
 
 .prompt-box {
@@ -37,7 +48,7 @@ h1 {
   border-radius: 10px;
   border: 1px solid #343a40; /* Dark border color */
   margin-top: 20px;
-  border-top: 10px solid #17a2b8; /* Turquoise color */
+  border-top: 10px solid var(--highlight-color); /* Turquoise color */
 }
 
 .separating-bar {
