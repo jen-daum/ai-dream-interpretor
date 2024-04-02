@@ -1,11 +1,7 @@
 function waitingInterpretation() {
   let interpretationarea = document.querySelector("#interpretation");
   interpretationarea.classList.remove("hidden");
-  new Typewriter("#interpretation", {
-    strings: `Finding meanings to your dream...`,
-    autoStart: true,
-    delay: 30,
-  });
+  interpretationarea.innerHTML = `<div class="loader"></div>`;
   interpretDream();
 }
 
