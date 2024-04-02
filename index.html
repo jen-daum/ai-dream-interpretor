@@ -9,6 +9,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Document</title>
   </head>
@@ -25,17 +27,14 @@
           class="form-control mb-3"
           placeholder="Enter your dream here..."
         ></textarea>
-        <button class="btn btn-primary" onclick="interpretDream()">
-          Interpret
-        </button>
+        <button class="btn btn-primary" id="interpret-btn">Interpret</button>
       </div>
       <div class="result-box bg-secondary p-4 rounded" id="interpretation">
         <!-- Interpretation will appear here -->
-        interpretation is this
       </div>
       <hr class="bg-light" />
     </div>
     <footer class="text-center mt-3">Made with ♡ by Jen DAUM</footer>
-    <script src="src/index.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
