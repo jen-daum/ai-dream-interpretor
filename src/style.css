@@ -1,10 +1,11 @@
 :root {
-  --highlight-color: #17a2b8; /* Define a CSS variable for the highlight color */
+  --highlight-color: #17a2b8;
+  --dark-grey-color: #343a40;
+  --darker-grey-color: #1e1e1e;
 }
 
 body {
-  background-color: #121212; /* Dark background color */
-  color: #fff;
+  background-color: var(--darker-grey-color);
 }
 
 h1 {
@@ -30,35 +31,45 @@ h1 {
   background-color: var(--highlight-color);
 }
 
-.prompt-box {
-  background-color: #1e1e1e !important; /* Darker background color */
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #343a40; /* Dark border color */
+#dreamInput::placeholder {
+  color: grey;
+}
+#dreamInput {
+  background-color: var(--dark-grey-color) !important;
+  color: white !important;
 }
 
-.prompt-box textarea {
-  background-color: #343a40 !important; /* Darker background color for textarea */
-  color: #fff !important; /* White text color */
+.prompt-box {
+  background-color: var(--darker-grey-color) !important;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--dark-grey-color);
+  color: white;
 }
 
 .result-box {
-  background-color: #1e1e1e !important; /* Darker background color */
+  background-color: var(--darker-grey-color) !important;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid #343a40; /* Dark border color */
+  border: 1px solid var(--dark-grey-color);
   margin-top: 20px;
-  border-top: 10px solid var(--highlight-color); /* Turquoise color */
+  border-top: 10px solid var(--highlight-color);
 }
 
 .separating-bar {
-  border-top: 1px solid #6c757d;
+  border-top: 1px solid grey;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-footer {
+footer,
+a {
   text-align: center;
   margin-top: 20px;
   color: grey !important;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
 }
